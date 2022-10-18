@@ -1,0 +1,68 @@
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <title>форма</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+    <body>
+        <h1>ЗАО Птицефабрика №1</h1>
+        <div class="modal">
+        <form method="post">
+            <label>
+                Фамилия
+                <input type="text" name="surname" autocomplete="surname">
+            </label><br>
+            <label>
+                Инициалы
+                <input name="name" autocomplete="name">
+            </label><br>
+            <label>
+                Пароль
+                <input name="password" type="password">
+            </label><br>
+            <label>
+                Адрес получателя
+                <input name="email">
+            </label><br>
+            <label>
+                Количество
+                <input name="count">
+            </label><br>
+            <label>
+                Тип
+                 <select name="meat">
+                    <option value="chicken">курица</option>
+                    <option value="turkey">индейка</option>
+                </select>
+                <select name="quolity">
+                    <option value="norm">отборная</option>
+                    <option value="nenorm">отбросы</option>
+                </select>
+            </label><br>
+                Доставка
+            <label>
+                <input name="delivery" type="radio" value="mail">
+                почтой
+            </label>
+            <label>
+                <input name="delivery" type="radio" value="courier">
+                курьером
+            </label>
+            <label>
+                <input name="delivery" type="radio" value="portal" checked>
+                порталом
+            </label><br>
+            <label>
+                Требуется накладная
+            <input name="xzkak" type="checkbox">
+            </label><br>
+            <label>
+                Дополнительная информация
+            <textarea name="info" rows="3" cols="50" ></textarea>
+            </label><br>
+            <input type="submit" value="заказать"><input type="submit" value="отменить">
+            
+        </form>
+        </div>
+    </body>
+</html>
